@@ -246,7 +246,7 @@ app.controller('infoCtl', function ($scope, $location, $rootScope, $routeParams,
   }, 750)
 
   $scope.contactCheck = {
-    secureContactInfo:'../../views/modalSecure.html',
+    secureContactInfo: '../../views/modalSecure.html',
     contactInfo: '../../views/contactInfo.html'
   }
   service.getPasscode().then(function (response1) {
