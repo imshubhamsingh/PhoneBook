@@ -1,0 +1,18 @@
+{
+  "name": "PhoneBook",
+  "version": "0.0.0",
+  "description": "Phone Book is a modern and minimal menu-bar application which manages your contact list ",
+  "dependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "0.0.8",
+    "gulp-exit": "0.0.2",
+    "mysql": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp connect-sync"
+  },
+  "author": "Shubham Singh",
+  "license": "MIT"
+}

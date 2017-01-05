@@ -1,0 +1,49 @@
+<div class="loading-text" ng-hide="fakeIntro"></div>
+<div class="am-fade-and-slide-top">
+    <br>
+    <br>
+    <div class="container jumbotron" style="margin-top: 7px;">
+        <h1 class="text-center" style="margin-top: -19px;">Phone Book</h1>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+                <span class="img-circle center-block about"> </span>
+            </div>
+            <div class="col-sm-4" style="margin-top: 25px;">
+                <h4 class="text-info">Phone Book is a modern and minimal menu-bar application.</h4>
+                <h6>
+                    <ul class="">
+                        <li>Manages your Contacts</li>
+                        <li>Edit Contact by any condition</li>
+                        <li>Search within your Contacts</li>
+                        <li>Favorite contacts in the app</li>
+                        <li>Secure contacts in the app </li>
+                        <li>Minimal and colorful design</li>
+                    </ul>
+                </h6>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div id="alertSuccessContainer"></div>
+            <div id="alertFailureContainer"></div>
+            <div id="sampleDataAdded"></div>
+            <div class="col-lg-3">
+                <h3 style="margin-top: 2mm;"> <span class="glyphicon glyphicon-wrench"></span> Change Passcode</h3>
+            </div>
+            <div class="col-lg-3">
+                <input type="password" maxlength="4" class="input-lg form-control" ng-model="currPass" placeholder="Current Passcode" autocomplete="off" style="margin-bottom: 10px;" onkeydown='return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 9 || event.which == 46' required>
+            </div>
+            <div class="col-lg-3">
+                <input type="password" maxlength="4" class="input-lg form-control" ng-model="newPass" placeholder="New Passcode" autocomplete="off" style="margin-bottom: 10px;" onkeydown='return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 9 || event.which == 46' required>
+            </div>
+            <div class="col-lg-3">
+                <input type="button" class="btn btn-info btn-block text-center" style="background: #3770C7;border-color: #3770C7;margin-bottom: 30px;margin-top: 1mm; " ng-click="changePasscode()" value="Change">
+                <input type="button" class="btn btn-info btn-block text-center" style="background: #3770C7;border-color: #3770C7;" ng-click="sampleData()" ng-disabled="samplelist == true" value="Add Sample Contact List">
+            </div>
+        </div>
+        <span class="help-block">*Initial Passcode is 1234</span>
+    </div>
+    <div class="modal-footer" style="margin-top:-18px;">
+        <h6 class="text-center" style="margin-top: -1px;">Copyright (c) 2016 Shubham Singh, This software is licensed under the MIT License.</h6>
+    </div>
+</div>

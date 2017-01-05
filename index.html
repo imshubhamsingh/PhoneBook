@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="phoneBook" ng-controller="appCtrl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <title>Phone Book</title>
+    <script type="text/javascript" src="./assets/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular-strap.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/angular-strap.tpl.min.js"></script>
+    <script type="text/javascript" src="./assets/vendors/loading-bar.js"></script>
+    <script type="text/javascript" src="./assets/js/app.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/loading-bar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/angular-motion.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-additions.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <script>
+        $(document).on('click','.navbar-collapse.in',function(e) {
+            if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <a class="navbar-brand brand" href="/"><div class="image col-xs-5"><span class="col-xs-7 brand" style="margin-top: 15px; margin-left: 35px">Phone Book</span></div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-toggle">
+        <ul class="nav navbar-nav">
+            <li ng-class="pageClass('/')"><a href="/">Browse</a></li>
+            <li ng-class="pageClass('/add-contact')"><a href="/add-contact">Add Contact</a></li>
+            <li ng-class="pageClass('/about')"><a href="/about">About</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <input type="text" class="form-control" placeholder="Search" ng-model="search.NAME" ng-keyup="startSearch();scrollTo('body');">
+        </form>
+    </div>
+</nav>
+<br>
+
+<div class="container">
+    <div ng-view autoscroll class="slideFadeTop">
+    </div>
+</div>
+
+</body>
+</html>

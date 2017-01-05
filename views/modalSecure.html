@@ -1,0 +1,46 @@
+<div class="examples" ng-hide="fakeIntro"></div>
+<div class="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 style="margin-top: 30px;padding-bottom: 15px;">Secured Contact</h5>
+                <h3 style="text-align: center;margin-top: 0px;margin-bottom: 0px;">Enter Pass Code</h3>
+                <div class="container" style="width: 220px;">
+                    <div class="row text-center" style="margin-left: -9px;margin-top:10px;font-size: xx-large;">
+                        <i aria-hidden="true" ng-class="{ 'fa fa-circle':password.length>=1, 'fa fa-circle-o':password.length<1, buzzOut:attempt === 'wrong'}"></i>
+                        <i aria-hidden="true" ng-class="{ 'fa fa-circle':password.length>=2, 'fa fa-circle-o':password.length<2, buzzOut:attempt === 'wrong' }"></i>
+                        <i aria-hidden="true" ng-class="{ 'fa fa-circle':password.length>=3, 'fa fa-circle-o':password.length<3, buzzOut:attempt === 'wrong' }"></i>
+                        <i aria-hidden="true" ng-class="{ 'fa fa-circle':password.length>=4, 'fa fa-circle-o':password.length<4, buzzOut:attempt === 'wrong' }"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container" style="width: 220px;">
+                    <div class="row">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('1')" value="1" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('2')" value="2" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('3')" value="3" ng-disabled="password.length == 4">
+                    </div>
+                    <div class="row" style="margin-bottom: 4px;">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('4')" value="4" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('5')" value="5" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('6')" value="6" ng-disabled="password.length == 4">
+                    </div>
+                    <div class="row" style="margin-bottom: 4px;">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('7')" value="7" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('8')" value="8" ng-disabled="password.length == 4">
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('9')" value="9" ng-disabled="password.length == 4">
+                    </div>
+                    <div class="row" style="margin-bottom: 4px;">
+                        <button class="col-xs-4 btn btn-circle glyphicon glyphicon-remove" ng-click="remove()"></button>
+                        <input type="button" class="col-xs-4 btn btn-circle" ng-click="setPassword('0')" value="0" ng-disabled="password.length == 4">
+                        <button type="button" class="col-xs-4 btn btn-circle glyphicon glyphicon-ok" ng-click="check()"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>

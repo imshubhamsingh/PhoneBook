@@ -1,0 +1,24 @@
+<div class="aside favRed" tabindex="-1" role="dialog">
+    <div class="aside-dialog">
+        <div class="aside-content">
+            <div class="aside-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h4>Favorites({{contactsFav.length}})</h4>
+            </div>
+            <div class="aside-body">
+            <input class="form-control" role="search" placeholder="Search in favorites" ng-model="search.NAME">
+            </div>
+
+            <div class="aside-footer">
+                <div class="list-group e">
+                    <div class="list-group-item" ng-repeat="contact in contactsFav|filter:search">
+                    <a href="/contact-{{contact.ID}}"  ng-click="$hide()" class="list" style="text-decoration: none">
+                        <p>{{contact.NAME}}</p>
+                    </a>
+                        <b>{{contact.PHONE}}<br></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

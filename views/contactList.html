@@ -1,0 +1,36 @@
+<div class="loading-text" ng-hide="fakeIntro"></div>
+<div class="am-slide-top">
+	<div class="page-header clearfix">
+	<div class="col-xs-7"><h2>All Contacts({{contacts.length}})</h2></div>
+	<div class="col-xs-5">
+	<span class="pull-right"><div ng-click="showSecureAside()"><span class="glyphicon glyphicon-lock g swing"></span></button></div></span>
+	<span class="pull-right"><div ng-click="showFavAside()"><span class="glyphicon glyphicon-heart g fav favRed"></span></button></div></span>
+	</div>
+</div>
+
+<div class="list-group">
+
+</div>
+<div ng-show="noContact">
+	<div class="col-sm-4 col-sm-offset-4">
+		<span class="img-circle center-block emboss"></span>
+	</div>
+	<br>
+	<div class="col-sm-4 col-sm-offset-4 text-center">
+		<div class="help-block z" style="text-align: center">No contacts</div>
+	</div>
+
+</div>
+<div ng-hide="noContact">
+		<div class="jumbotron jumbotron-custom container-fluid e"  ng-repeat="contact in contacts|filter:search">
+			<span class="pull-right"><a ng-click="showModal($index)"><span class="glyphicon glyphicon-trash g delete"></span></button></a></span>
+			<span class="pull-right"><a ng-click="favorite($index)"><span class="glyphicon glyphicon glyphicon-heart g fav" ng-class="{ favRed:contact.FAVORITE =='1' }"></span></a></span>
+			<a href="/contact-{{contact.ID}} "  class="list" style="text-decoration: none">
+			<h1>{{contact.NAME}}</h1>
+			<b>{{contact.PHONE}}<br></b>
+			<small>{{contact.EMAIL}}<br></small>
+		    </a>
+		</div>
+
+ </div>
+</div>
