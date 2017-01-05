@@ -9,8 +9,7 @@ gulp.task('connect-sync', function () {
     browserSync({
       proxy: '127.0.0.1:8000'
     })
-  }).pipe(exit())
-
+  })
   gulp.watch('php/*.php').on('change', function () {
     browserSync.reload()
   })
