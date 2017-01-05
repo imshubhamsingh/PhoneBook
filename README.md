@@ -69,7 +69,7 @@ The phone book icons are made by myself. If you like to use them in your own pro
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-## License [![License](https://img.shields.io/github/license/hyperium/hyper.svg)]()
+## License [![License](https://img.shields.io/github/license/hyperium/hyper.svg)](https://github.com/imshubhamsingh/PhoneBook/blob/master/LICENSE.txt)
 
-Copyright (c) 2017 Shubham Singh, This software is licensed under the [MIT License](LICENSE).
+Copyright (c) 2017 Shubham Singh, This software is licensed under the [MIT License](https://github.com/imshubhamsingh/PhoneBook/blob/master/LICENSE.txt).
 
