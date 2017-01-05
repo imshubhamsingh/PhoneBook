@@ -10,7 +10,10 @@ PhoneBook
 
 > Phone Book is a modern and minimal menu-bar application.
 
+<h1 align="center">
 <img src="https://github.com/imshubhamsingh/PhoneBook/raw/master/Screenshot/screenshot1.png?raw=true" alt="PhoneBook" width="999px"/>
+</h1>
+
 
 ## Features
 
@@ -22,9 +25,9 @@ PhoneBook
 * Minimal and colorful design
 
 
+<h1 align="center">
 <img src="https://github.com/imshubhamsingh/PhoneBook/raw/master/Screenshot/screenshot2.png?raw=true" alt="PhoneBook" width="999px"/>
-
-
+</h1>
 
 ## Development
 
