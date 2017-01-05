@@ -41,7 +41,7 @@ PhoneBook
 
 __You need [PHP](http://php.net/manual/en/install.php) installed on your machine__
 
-Since the app uses SQLite library and PDO , it is not included by default, it is necessary to modify the PHP.INI file in the directory of PHP and activate two lines, by removing the semicolon in prefix: 
+Since the app uses SQLite library and PDO , it is not included by default, it is necessary to modify the PHP.INI file in the directory of PHP and activate one line, by removing the semicolon in prefix: 
 
 ```extension=php_pdo_sqlite.dll ```
 
