@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://github.com/jackd248/temps">
+<a href="https://github.com/imshubhamsingh/PhoneBook">
 <img src="https://github.com/imshubhamsingh/PhoneBook/raw/master/assets/img/aboutLogo.png?raw=true" alt="PhoneBook" width="200"/></a><br/><br/>
 PhoneBook
 <br/>
