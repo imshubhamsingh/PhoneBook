@@ -35,7 +35,7 @@ PhoneBook
 
 1. Clone repo ```git clone https://github.com/imshubhamsingh/PhoneBook.git```
 2. ```cd PhoneBook```
-3. ```npm install && start  ```
+3. ```npm install && npm start  ```
 
 <h3 align="center">or</h3>
 
