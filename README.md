@@ -34,7 +34,12 @@ PhoneBook
 ### Run app
 
 1. Clone repo ```git clone https://github.com/imshubhamsingh/PhoneBook.git```
-2. ```npm install && start  ```
+2. ```cd PhoneBook```
+3. ```npm install && start  ```
+
+<h3 align="center">or</h3>
+
+>View a live demo of this project on [heroku](https://phone-book-angular.herokuapp.com)
 
 
 ### Instructions
