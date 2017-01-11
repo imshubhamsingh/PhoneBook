@@ -1,5 +1,6 @@
 {
   "require": {
-    "php": "7.0.14"
+    "php": "7.0.14",
+    "ext-pdo_sqlite": "*"
   }
 }
