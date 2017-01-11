@@ -1,1 +1,1 @@
-web: node server.js
+web: node server.js && vendor/bin/heroku-php-apache2 public/
