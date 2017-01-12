@@ -5,7 +5,7 @@ PhoneBook
 <br/>
 
 </h1>
-<h4 align="center">A simple phone book App.</h4>
+<h4 align="center">My first AngularJs App</h4>
 <h5 align="center"></h5>
 
 > Phone Book is a modern and minimal menu-bar application.
