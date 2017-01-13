@@ -1,17 +1,5 @@
 /* ---------------------------------------- Controllers ------------------------------------------------- */
 
-/* Main Controller */
-app.controller('appCtrl', function ($scope, $rootScope, $location) {
-    $scope.startSearch = function () {
-        $location.path('/')
-    }
-    $scope.path = $location.path()
-    $scope.search = $rootScope.contacts
-    $scope.pageClass = function (path) {
-        return (path === $location.path()) ? 'active' : ''
-    }
-})
-
 /* Contact List Controller */
 app.controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal, $aside, cfpLoadingBar, $timeout) {
     $scope.start = function () {
