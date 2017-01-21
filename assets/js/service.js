@@ -1,7 +1,7 @@
 /* -------------------------------------------- Factory ------------------------------------------------ */
 
 /* All services need in Controller */
-app.factory('service', function ($http) {
+angular.module('phonebook.service',[]).factory('service', function ($http) {
     return {
         insertData: function (contact) {
             $http({

@@ -1,6 +1,6 @@
 /* --------------------------------------- Custom Directive ---------------------------------------------- */
 
-app.directive('editable', function ($routeParams, $alert, service) {
+angular.module('phonebook.directive',['phonebook.service']).directive('editable', function ($routeParams, $alert, service) {
     return {
         restrict: 'AE',
         templateUrl: '../../views/editable.html',

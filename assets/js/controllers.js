@@ -1,7 +1,7 @@
 /* ---------------------------------------- Controllers ------------------------------------------------- */
-
+var dependencies = ['ngAnimate', 'ngSanitize', 'mgcrea.ngStrap', 'chieffancypants.loadingBar','phonebook.service']
 /* Contact List Controller */
-app.controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal, $aside, cfpLoadingBar, $timeout) {
+angular.module('phonebook.indexController',dependencies).controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal, $aside, cfpLoadingBar, $timeout) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -146,7 +146,7 @@ app.controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal
 })
 
 /* Add Contact Controller */
-app.controller('addCtl', function ($scope, $rootScope, $alert, service, $timeout, cfpLoadingBar) {
+angular.module('phonebook.addContactController',dependencies).controller('addCtl', function ($scope, $rootScope, $alert, service, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -182,7 +182,7 @@ app.controller('addCtl', function ($scope, $rootScope, $alert, service, $timeout
 })
 
 /* Contact Information Controller */
-app.controller('infoCtl', function ($scope, $location, $rootScope, $routeParams, $modal, $alert, service, $timeout, cfpLoadingBar) {
+angular.module('phonebook.contactInfoController',dependencies).controller('infoCtl', function ($scope, $location, $rootScope, $routeParams, $modal, $alert, service, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -282,7 +282,7 @@ app.controller('infoCtl', function ($scope, $location, $rootScope, $routeParams,
 })
 
 /* About Page Controller */
-app.controller('aboutCtl', function ($scope, $rootScope, service, $alert, $http, $timeout, cfpLoadingBar) {
+angular.module('phonebook.aboutController',dependencies).controller('aboutCtl', function ($scope, $rootScope, service, $alert, $http, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
