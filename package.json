@@ -4,15 +4,8 @@
   "description": "Phone Book is a modern and minimal menu-bar application which manages your contact list ",
   "dependencies": {
     "browser-sync": "^2.18.2",
-    "express": "^4.14.0",
     "gulp": "^3.9.1",
-    "gulp-connect-php": "0.0.8",
-    "gulp-exit": "0.0.2",
-    "mysql": "^2.12.0",
-    "node-phpfpm": "^1.0.1",
-    "path": "^0.12.7",
-    "php-express": "0.0.3",
-    "php-node": "0.0.2"
+    "gulp-connect-php": "0.0.8"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,6 +1,6 @@
 /* global angular */
 
-angular.module('phoneBook', ['ngRoute','phonebook.directive','phonebook.customFilter','phonebook.indexController','phonebook.addContactController','phonebook.contactInfoController','phonebook.aboutController'])
+angular.module('phoneBook', ['ngRoute','phonebook.directive','phonebook.customFilter','phonebook.Controller'])
     .controller('appCtrl', function ($scope, $rootScope, $location) {
         $scope.startSearch = function () {
             $location.path('/')

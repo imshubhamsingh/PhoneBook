@@ -2,7 +2,6 @@
 var gulp = require('gulp')
 var connect = require('gulp-connect-php')
 var browserSync = require('browser-sync')
-var exit = require('gulp-exit')
 
 gulp.task('connect-sync', function () {
   connect.server({}, function () {

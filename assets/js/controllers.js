@@ -1,7 +1,7 @@
 /* ---------------------------------------- Controllers ------------------------------------------------- */
 var dependencies = ['ngAnimate', 'ngSanitize', 'mgcrea.ngStrap', 'chieffancypants.loadingBar','phonebook.service']
 /* Contact List Controller */
-angular.module('phonebook.indexController',dependencies).controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal, $aside, cfpLoadingBar, $timeout) {
+angular.module('phonebook.Controller',dependencies).controller('indexCtl', function ($scope, $rootScope, service, $alert, $modal, $aside, cfpLoadingBar, $timeout) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -146,7 +146,7 @@ angular.module('phonebook.indexController',dependencies).controller('indexCtl', 
 })
 
 /* Add Contact Controller */
-angular.module('phonebook.addContactController',dependencies).controller('addCtl', function ($scope, $rootScope, $alert, service, $timeout, cfpLoadingBar) {
+angular.module('phonebook.Controller').controller('addCtl', function ($scope, $rootScope, $alert, service, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -182,7 +182,7 @@ angular.module('phonebook.addContactController',dependencies).controller('addCtl
 })
 
 /* Contact Information Controller */
-angular.module('phonebook.contactInfoController',dependencies).controller('infoCtl', function ($scope, $location, $rootScope, $routeParams, $modal, $alert, service, $timeout, cfpLoadingBar) {
+angular.module('phonebook.Controller').controller('infoCtl', function ($scope, $location, $rootScope, $routeParams, $modal, $alert, service, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
@@ -282,7 +282,7 @@ angular.module('phonebook.contactInfoController',dependencies).controller('infoC
 })
 
 /* About Page Controller */
-angular.module('phonebook.aboutController',dependencies).controller('aboutCtl', function ($scope, $rootScope, service, $alert, $http, $timeout, cfpLoadingBar) {
+angular.module('phonebook.Controller').controller('aboutCtl', function ($scope, $rootScope, service, $alert, $http, $timeout, cfpLoadingBar) {
     $scope.start = function () {
         cfpLoadingBar.start()
     }
