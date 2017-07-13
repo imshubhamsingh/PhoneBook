@@ -62,7 +62,7 @@ For more information about PDO, please visit http://www.php.net/manual/en/book.p
 * [BootStrap](http://getbootstrap.com/)
 * [AngularJS](https://angularjs.org/)
 * [AngularStrap](http://mgcrea.github.io/angular-strap/)
-* [Angular-Motion](https://github.com/mgcrea/angular-motion)
+* [Angular-Motion](http://mgcrea.github.io/angular-motion/)
 
 ### Back-End
 
