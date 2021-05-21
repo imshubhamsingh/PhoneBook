@@ -46,12 +46,7 @@ PhoneBook
 
 __You need [PHP](http://php.net/manual/en/install.php) installed on your machine__
 
-Since the app uses SQLite library and PDO , it is not included by default, it is necessary to modify the PHP.INI file in the directory of PHP and activate one line, by removing the semicolon in prefix: 
 
-```extension=php_pdo_sqlite.dll ```
-
-
-For more information about PDO, please visit http://www.php.net/manual/en/book.pdo.php.
 
 ## Credits
 
@@ -70,11 +65,5 @@ For more information about PDO, please visit http://www.php.net/manual/en/book.p
 * [SQLite](https://sqlite.org/)
 
 
-The phone book icons are made by myself. If you like to use them in your own project, you can find the icons svg file  on [Github](https://github.com/imshubhamsingh/PhoneBook/blob/master/assets/svg/logo.svg).
 
-[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
-## License [![License](https://img.shields.io/github/license/hyperium/hyper.svg)](https://github.com/imshubhamsingh/PhoneBook/blob/master/LICENSE.txt)
-
-Copyright (c) 2016 Shubham Singh, This software is licensed under the [MIT License](https://github.com/imshubhamsingh/PhoneBook/blob/master/LICENSE.txt).
 
